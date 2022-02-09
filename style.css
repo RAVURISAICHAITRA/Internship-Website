@@ -1,0 +1,350 @@
+* {
+  overflow-x: hidden;
+}
+.header {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  font-family: "Jost";
+  font-weight: 700;
+  overflow-y: hidden;
+}
+.header > img {
+  height: 50px;
+  width: 50px;
+  padding: 15px;
+}
+.header > p {
+  margin-top: 30px;
+}
+.header__left {
+  display: flex;
+  position: absolute;
+  justify-content: space-evenly;
+  right: 50px;
+  overflow-y: hidden;
+}
+.header__left > p {
+  padding: 15px;
+  overflow-y: hidden;
+}
+.header__left > button {
+  background-color: #ff6666;
+  border: none;
+  height: 50px;
+  width: 120px;
+  margin-top: 17px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  overflow-y: hidden;
+}
+.first {
+  border-top: 0;
+  height: 1000px;
+  width: 100%;
+  background-image: url("bg-1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 400px;
+}
+.first > h1 {
+  align-items: center;
+  padding-top: 200px;
+  height: 100px;
+  width: 400px;
+  font-family: "Jost";
+  padding-bottom: 10px;
+  overflow-y: hidden;
+}
+.first > p {
+  align-items: center;
+  height: 100px;
+  width: 400px;
+  font-family: "Jost";
+  padding-bottom: 10px;
+  overflow-y: hidden;
+}
+.first > button {
+  justify-content: space-evenly;
+}
+.one {
+  background-color: #ff6666;
+  color: #fff;
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Jost";
+}
+.two {
+  background-color: #fff;
+  color: #ff6666;
+  height: 40px;
+  width: 150px;
+  border-color: #ff6666;
+  border-radius: 5px;
+  border-width: 2px;
+  font-family: "Jost";
+}
+.second {
+  align-items: center;
+  font-family: "Jost";
+  padding-left: 400px;
+  width: 700px;
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+.third {
+  height: 500px;
+  width: 100%;
+  background-image: url("bg-2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  
+}
+.third > h2 {
+    padding-top: 40px;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  text-align:center;
+}
+.third > p {
+  align-items: center;
+  color: white;
+  text-align:center;
+  
+}
+.third__box {
+  
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  
+  /* padding-left: 300px;
+    padding-right: 300px; */
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  overflow-y: hidden;
+}
+
+.third__one {
+  background-color: whitesmoke;
+  padding: 20px;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 2px;
+  width: 400px;
+}
+.four__main{
+    align-items: center;
+    justify-content: center;
+    padding-left: 400px;
+    padding-top: 70px;
+}
+.four {
+    width: 600px;
+    border-left-style: solid;
+    border-left-color: #ff6666;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    
+}
+.five__main{
+    padding-left: 400px;
+    padding-top: 70px;
+}
+.five {
+    width: 600px;
+    background-color: #ff6666;
+    padding: 10px;
+    padding-top: 30px;
+    color: white;
+}
+.five > button{
+    background-color: white;
+    border: none;
+    color: grey;
+    width: 200px;
+    height:30px;
+}
+.six{
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+.six > h1 {
+  text-align: center;
+}
+
+.accordian {
+  padding-left: 350px;
+  width: 700px;
+  
+  align-items: center;
+  justify-content: center;
+  
+}
+.accordian .contentBx {
+  position: relative;
+  margin: 10px 20px;
+}
+.accordian .contentBx .label {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+.accordian .contentBx .label::before {
+  content:'+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+.accordian .contentBx .content {
+  position: relative;
+  padding: 10px;
+  
+  height: 0;
+  
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  overflow: hidden;
+}
+.accordian .contentBx.active .content{
+  height: 150px;
+}
+.seven {
+  height: 600px;
+  width: 100%;
+  background-image: url("bg-4.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.seven > img {
+  height: 400px;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+.seven__sub {
+  width: 300px;
+  padding-left: 100px;
+}
+.eight {
+  height: 600px;
+  width: 100%;
+  background-image: url("bg-3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.nine {
+  height: 600px;
+  width: 100%;
+  background-image: url("bg-4.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.eight > img {
+  height: 400px;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+#no1 {
+  
+  width:10px;
+  height:10px;
+  margin:auto;
+  overflow-y: hidden;
+}
+#line1{
+  
+  font-size:0;
+  width:1px;
+  height:40px;
+  color:#fff;
+  background-color:#000;
+  margin-left: 25px;
+}
+.top{
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 25px;
+  padding-top: 5px;
+  padding-left:15px ;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+  font: 32px Arial, sans-serif;
+}
+.ten > h1 {
+  padding-top: 100px;
+  text-align: center;
+}
+#flow_container{
+  padding-top: 10px;
+}
+.ten_sub{
+  display: flex;
+}
+.ten{
+  width: 800px;
+  align-items: center;
+  padding-left: 400px;
+  padding-bottom: 100px;
+}
+.ten_text{
+  margin-top: 15px;
+  padding-left: 10px;
+}
+.eleven {
+  height: 600px;
+  width: 100%;
+  background-image: url("bg-2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
